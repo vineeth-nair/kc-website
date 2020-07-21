@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dairy Products</title>
+	<link rel="stylesheet" href="styles2.css"/>
+	<link rel="icon" href="milk.png" type="img/icn">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1 class="fg">Dairy Products</h1>
+	<table class="tables">
+		<tr>
+			<td>
+				<img src="milk.png" class="apple"/>
+			</td>
+			<td>
+				<label for = "qty" class="labels">Milk</label> 
+			</td>
+			<td>
+				<select name="qty" class="size">
+					<option>0kg</option>
+					<option>1.5L</option>
+					<option>1L</option>
+					<option>2L</option>
+					<option>3L</option>
+					<option>4L</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="butter.png" class="apple"/>
+			</td>
+			<td>
+				<label for = "qtyO" class="labels">Butter</label> 
+			</td>
+			<td>
+				<select name="qtyO" class="size">
+					<option>0kg</option>
+					<option>200g</option>
+					<option>250g</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="cheese.png" class="apple"/>
+			</td>
+			<td>
+				<label for = "qtyP" class="labels">Cheese</label> 
+			</td>
+			<td>
+				<select name="qtyP" class="size">
+					<option>0kg</option>
+					<option>200g</option>
+					<option>250g</option>
+				</select>
+			</td>
+		</tr>
+
+	</table>
+	<br>
+	<br>
+	<label for="Address" class="labels">Address</label>
+	<textarea name="Address" value= "Address" rows="5" cols="40" placeholder="Enter your address" class="null"></textarea>
+	<br>
+	<input type="submit" name="submit" value="Submit" class="submitButton" align="center">
+	<script>
+	$('.submitButton').click(function(){
+		if (confirm("You have clicked the submit button. Do you want to continue?")) {
+			alert("Thank you! Your order is being processed. It will be delivered soon.");
+			$('.size').val('');
+			$('.null').val('');
+		}
+		}
+
+	)
+</script>
+	
+
+</body>
+</html>

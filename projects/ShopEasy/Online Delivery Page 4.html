@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fish & Meat</title>
+	<link rel="stylesheet" href="styles2.css"/>
+	<link rel="icon" href="milk.png" type="img/icn">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1 class="fg">Fish & Meat</h1>
+	<table class="tables">
+		<tr>
+			<td>
+				<img src="fish.png" class="apple"/>
+			</td>
+			<td>
+				<label for = "qtyf" class="labels">Fish</label> 
+			</td>
+			<td>
+				<select name="qtyf" class="size">
+					<option>0kg</option>
+					<option>1kg</option>
+					<option>2kg</option>
+					<option>3kg</option>
+					<option>4kg</option>
+					<option>5kg</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="chicken.png" class="apple"/>
+			</td>
+			<td>
+				<label for = "qtyC" class="labels">Chicken</label> 
+			</td>
+			<td>
+				<select name="qtyC" class="size">
+					<option>0kg</option>
+					<option>1kg</option>
+					<option>2kg</option>
+					<option>3kg</option>
+				</select>
+			</td>
+		</tr>
+
+	</table>
+	<br>
+	<br>
+	<label for="Address" class="labels">Address</label>
+	<textarea name="Address" value= "Address" rows="5" cols="40" placeholder="Enter your address" class="null"></textarea>
+	<br>
+	<input type="submit" name="submit" value="Submit" class="submitButton" align="center">
+	<script>
+	$('.submitButton').click(function(){
+		if (confirm("You have clicked the submit button. Do you want to continue?")) {
+			alert("Thank you! Your order is being processed. It will be delivered soon.");
+			$('.size').val('');
+			$('.null').val('');
+		}
+		}
+
+	)
+</script>
+	
+
+</body>
+</html>

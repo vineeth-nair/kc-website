@@ -1,0 +1,55 @@
+body{
+	margin-top: 150px;
+	background: url(https://img.pngio.com/food-background-images-94-images-in-co-381169-png-images-pngio-food-png-background-1440_619.png);
+	background-repeat: no-repeat;
+}
+.fg {
+	color: green;
+	text-align: center;
+	text-decoration-line: underline;
+	font-size: 75px;
+	font-family: Comic Sans MS; 
+}
+.tables{
+	margin-left: 150px;
+}
+.apple {
+	width: 25%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.labels{
+	font-size: 25px;
+	text-align: center;
+}
+.size {
+	padding: 10px;
+	margin-left: 50px;
+
+}
+.submitButton {
+	padding: 10px;
+	background-color: green;
+	color: white;
+	font-size: 25px;
+	margin-top: 75px;
+	margin-left: 45%;
+	border-color: black;
+	border-radius: 10px;
+	width: 150px;
+
+}
+.message {
+	border: 2px solid black;
+	background-color: white;
+	display:inline-block;
+	position: absolute;
+	top: 500px;
+	width: 350px;
+	text-align: center;
+	margin-right: 40%;
+}
+.null{
+	
+}

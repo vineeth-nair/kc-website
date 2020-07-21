@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fruits And Vegetables</title>
+	<link rel="stylesheet" href="styles2.css"/>
+	<link rel="icon" href="milk.png" type="img/icn">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<h1 class="fg">Fruits & Vegetables</h1>
+	<table class="tables">
+		<tr>
+			<td>
+				<img src="apple.png" class="apple"/>
+			</td>
+			<td>
+				<label for = "qty" class="labels">Apples</label> 
+			</td>
+			<td>
+				<select name="qty" class="size">
+					<option>0kg</option>
+					<option>1kg</option>
+					<option>2kg</option>
+					<option>3kg</option>
+					<option>4kg</option>
+					<option>5kg</option>
+					<option>6kg</option>
+					<option>7kg</option>
+					<option>8kg</option>
+					<option>9kg</option>
+					<option>10kg</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="orange.png" class="apple"/>
+			</td>
+			<td>
+				<label for = "qtyO" class="labels">Oranges</label> 
+			</td>
+			<td>
+				<select name="qtyO" class="size">
+					<option>0kg</option>
+					<option>1kg</option>
+					<option>2kg</option>
+					<option>3kg</option>
+					<option>4kg</option>
+					<option>5kg</option>
+					<option>6kg</option>
+					<option>7kg</option>
+					<option>8kg</option>
+					<option>9kg</option>
+					<option>10kg</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="potato.png" class="apple"/>
+			</td>
+			<td>
+				<label for = "qtyP" class="labels">Potatoes</label> 
+			</td>
+			<td>
+				<select name="qtyP" class="size">
+					<option>0kg</option>
+					<option>1kg</option>
+					<option>2kg</option>
+					<option>3kg</option>
+					<option>4kg</option>
+					<option>5kg</option>
+					<option>6kg</option>
+					<option>7kg</option>
+					<option>8kg</option>
+					<option>9kg</option>
+					<option>10kg</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img src="carrot.png" class="apple"/>
+			</td>
+			<td>
+				<label for = "qtyC" class="labels">Carrots</label> 
+			</td>
+			<td>
+				<select name="qtyC" class="size">
+					<option>0kg</option>
+					<option>1kg</option>
+					<option>2kg</option>
+					<option>3kg</option>
+					<option>4kg</option>
+					<option>5kg</option>
+					<option>6kg</option>
+					<option>7kg</option>
+					<option>8kg</option>
+					<option>9kg</option>
+					<option>10kg</option>
+				</select>
+			</td>
+		</tr>
+
+	</table>
+	<br>
+	<br>
+	<label for="Address" class="labels">Address</label>
+	<textarea name="Address" value= "Address" rows="5" cols="40" placeholder="Enter your address" class="null"></textarea>
+	<br>
+	<input type="submit" name="submit" value="Submit" class="submitButton" align="center">
+	<script>
+	$('.submitButton').click(function(){
+		if (confirm("You have clicked the submit button. Do you want to continue?")) {
+			alert("Thank you! Your order is being processed. It will be delivered soon.");
+			$('.size').val('');
+			$('.null').val('');
+
+		}
+		}
+
+	)
+</script>
+</body>
+</html>

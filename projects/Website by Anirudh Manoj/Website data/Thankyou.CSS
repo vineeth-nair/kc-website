@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+}
+.quote{
+    font-size: 20px;
+}
+.the{
+    color: black;
+}
+.young{
+    color: silver;
+}
+.make{
+    color: black;
+}
+.title{
+    margin : -8px;
+
+    background-color: goldenrod;
+    border: black double 3px;
+    padding: 1px;
+    font-size: 26px;
+    padding-left: 50px;
+    border-radius: 15px;
+    border-left: 0px;
+    border-right: 0px;
+
+}
+.body{
+    
+    padding: 30px;
+    margin-top: 20px;
+    padding-bottom: 200px;
+    margin-right: 20px;
+    
+    background-color: white;
+    margin-left: 40px;
+}
+.goback{
+    background: goldenrod;
+    padding: 0px;
+    width: 125px;
+   /* padding-left: 20px;
+    padding-right:  20px;*/
+   
+    border: black solid 2px;
+    border-radius: 20px;
+}
